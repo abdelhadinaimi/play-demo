@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/play-scala-hello-world-tutorial.iml" filepath="$PROJECT_DIR$/.idea/modules/play-scala-hello-world-tutorial.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/play-scala-hello-world-tutorial-build.iml" filepath="$PROJECT_DIR$/.idea/modules/play-scala-hello-world-tutorial-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api.iml" filepath="$PROJECT_DIR$/.idea/modules/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-build.iml" filepath="$PROJECT_DIR$/.idea/modules/api-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/model.iml" filepath="$PROJECT_DIR$/.idea/modules/model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/submodule1.iml" filepath="$PROJECT_DIR$/.idea/modules/submodule1.iml" />
     </modules>
   </component>
 </project>

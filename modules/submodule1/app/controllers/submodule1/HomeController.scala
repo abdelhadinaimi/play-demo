@@ -1,19 +1,15 @@
-package controllers
+package controllers.submodule1
 
+import java.lang.module.Configuration
 import java.nio.file.Path
 
-import actions.{Logging, LoggingAction}
 import akka.stream.scaladsl.{FileIO, Source}
 import akka.util.ByteString
-import javax.inject._
-import play.api._
+import javax.inject.Inject
 import play.api.http.HttpEntity
 import play.api.mvc._
-import utils.MyExecutionContext
-
-import scala.concurrent.{ExecutionContext, Future}
-
-
+import actions._
+import javax.inject.Singleton
 /**
  * This controller creates an `Action` to handle HTTP requests to the
  * application's home page.
@@ -28,7 +24,7 @@ class HomeController @Inject()(loggerAction: LoggingAction, config: Configuratio
    * will be called when the application receives a `GET` request with
    * a path of `/`.
    */
-  def index(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
+  /*def index(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.index())
   }
 
@@ -44,7 +40,7 @@ class HomeController @Inject()(loggerAction: LoggingAction, config: Configuratio
     loggerAction { implicit request: Request[AnyContent] =>
       Ok(views.html.hello(name))
     }
-  }
+  }*/
 
   /*def blocking(): Action[AnyContent] = Action.async {
     val executionContext: ExecutionContext = mec

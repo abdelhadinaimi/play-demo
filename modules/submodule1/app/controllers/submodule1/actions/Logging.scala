@@ -1,4 +1,4 @@
-package actions
+package controllers.submodule1.actions
 
 import play.api.mvc._
 

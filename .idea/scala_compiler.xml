@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="play_5454" />
+    <profile name="sbt 1" modules="common,play_5454,views" />
     <profile name="sbt 2" modules="play-scala-hello-world-tutorial">
       <option name="postfixOps" value="true" />
       <option name="deprecationWarnings" value="true" />
@@ -11,6 +11,24 @@
         <parameter value="-encoding" />
         <parameter value="utf8" />
         <parameter value="-Xfatal-warnings" />
+      </parameters>
+    </profile>
+    <profile name="sbt 3" modules="api,play-demo">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-encoding" />
+        <parameter value="utf8" />
+        <parameter value="-Xfatal-warnings" />
+      </parameters>
+    </profile>
+    <profile name="sbt 4" modules="controllers,model,submodule1">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <parameters>
+        <parameter value="-encoding" />
+        <parameter value="utf8" />
       </parameters>
     </profile>
   </component>

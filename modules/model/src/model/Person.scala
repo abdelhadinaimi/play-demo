@@ -4,7 +4,7 @@ import play.api.libs.functional.syntax.{toApplicativeOps, toFunctionalBuilderOps
 import play.api.libs.json.Reads._
 import play.api.libs.json.{Json, Reads, Writes, __}
 
-case class Person(firstname: String, lastname: String, email: String/*, gender: Genders.Value*/)
+case class Person(firstname: String, lastname: String, email: String /*, gender: Genders.Value*/)
 
 object Person {
   implicit val writes: Writes[Person] = (o: Person) => Json.obj(
@@ -19,6 +19,3 @@ object Person {
       (__ \ "email").read[String](maxLength[String](256) ~> minLength[String](2) ~> email)
     )(Person.apply _) // apply is the constructor function
 }
-
-// ~ and
-// ~> keepAnd, <~ andKeep

@@ -1,10 +1,10 @@
-package controllers
+package controllers.submodule1
 
-import javax.inject.{Inject, Singleton}
-import model.Person
-import play.api.libs.json._
-import play.api.mvc.{AbstractController, Action, AnyContent, ControllerComponents, Request}
-
+import javax.inject.Inject
+import play.api.libs.json.Json
+import play.api.mvc._
+import model._
+import javax.inject.Singleton
 
 @Singleton
 class PersonController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {

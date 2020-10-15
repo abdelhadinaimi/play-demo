@@ -73,7 +73,7 @@
       <ol>
         <li>Open the <code>conf/routes</code> file.</li>
         <li>Below the <code>tutorial</code> page route, add the following line:
-          <p><code>GET     /hello      controllers.HomeController.hello</code></p>
+          <p><code>GET     /hello      controllers.submodule1.HomeController.hello</code></p>
         </li>
       </ol>
       <p>Test the new page:</p>
@@ -100,7 +100,7 @@
         </li>
         <li>In the <code>conf/routes</code> file, add a <code>(name: String)</code> parameter at the end of the
           <code>/hello</code> route:
-          <p><code>GET  /hello        controllers.HomeController.hello(name: String)</code></p>
+          <p><code>GET  /hello        controllers.submodule1.HomeController.hello(name: String)</code></p>
         </li>
         <li>In Twirl templates, all variables and their types must be declared. From the <code>app/views/</code>
           directory, open the <code>hello.scala.html</code> file and do the following:

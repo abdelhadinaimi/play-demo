@@ -1,6 +1,6 @@
-package actions
+package controllers.submodule1.actions
 
-import com.google.inject.Inject
+import javax.inject.Inject
 import play.api.mvc._
 
 import scala.concurrent.{ExecutionContext, Future}
