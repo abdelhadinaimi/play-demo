@@ -1,6 +1,5 @@
 package controllers.submodule1
 
-import java.lang.module.Configuration
 import java.nio.file.Path
 
 import akka.stream.scaladsl.{FileIO, Source}
@@ -10,6 +9,7 @@ import play.api.http.HttpEntity
 import play.api.mvc._
 import actions._
 import javax.inject.Singleton
+import play.api.Configuration
 /**
  * This controller creates an `Action` to handle HTTP requests to the
  * application's home page.
